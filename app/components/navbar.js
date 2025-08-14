@@ -12,24 +12,28 @@ export default function Navbar() {
     { label: "HOME", href: "/" },
     { label: "ABOUT", href: "/about" },
     {
+      label: "SERVICES",
+      href: "/services",
+      submenu: [
+        { label: "LAND", href: "/services/land" },
+        { label: "ARCHITECTURE", href: "/services/architecture" },
+        { label: "CONSTRUCTION", href: "/services/construction" },
+        { label: "FURNITURE", href: "/services/furniture" },
+        { label: "VILLA MANAGEMENT", href: "/services/villa-management" },
+      ],
+    },
+    {
       label: "DEVELOPMENTS",
       href: "/developments",
       submenu: [
-        { label: "LAND", href: "/developments/land" },
-        { label: "ARCHITECTURE", href: "/developments/architecture" },
-        { label: "CONSTRUCTION", href: "/developments/construction" },
-        { label: "FURNITURE", href: "/developments/furniture" },
-        { label: "VILLA MANAGEMENT", href: "/developments/villa-management" },
+        { label: "ULO VILLAS", href: "/developments/ulo-villas" },
+        { label: "SERENO VILLA", href: "/developments/sereno-villa" },
+        { label: "KAWISTA VILLA", href: "/developments/kawista-villa" },
       ],
     },
     {
       label: "PORTOFOLIO",
       href: "/portofolio",
-      submenu: [
-        { label: "ULO VILLAS", href: "/portofolio/ulo-villas" },
-        { label: "SERENO VILLA", href: "/portofolio/sereno-villa" },
-        { label: "KAWISTA VILLA", href: "/portofolio/kawista-villa" },
-      ],
     },
     { label: "CASE STUDY", href: "/case-study" },
   ];
@@ -77,7 +81,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="p-3">
-          <ul className="hidden md:flex cursor-pointer items-center">
+          <ul className="hidden xl:flex cursor-pointer items-center">
             {menuItems.map((item) => (
               <li key={item.label} className="relative group">
                 {item.submenu ? (
@@ -122,7 +126,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="text-white text-2xl md:hidden"
+          className="text-white text-2xl xl:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <FiMenu />
@@ -130,7 +134,7 @@ export default function Navbar() {
 
         {/* Mobile Fullscreen Menu */}
         <div
-          className={`fixed top-0 left-0 w-full h-screen z-50 transform transition-transform duration-1000 md:hidden ${
+          className={`fixed top-0 left-0 w-full h-screen z-50 transform transition-transform duration-1000 xl:hidden ${
             menuOpen ? "translate-y-0" : "-translate-y-full"
           }`}
         >

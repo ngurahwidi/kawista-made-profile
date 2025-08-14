@@ -1,0 +1,7 @@
+<!-- /public/images/logo-placeholder-1.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="60" viewBox="0 0 140 60">
+  <rect width="140" height="60" fill="#ccc" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="14" fill="#333">
+    Logo
+  </text>
+</svg>
