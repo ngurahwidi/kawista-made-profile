@@ -36,6 +36,7 @@ export default function Navbar() {
       href: "/portofolio",
     },
     { label: "CASE STUDY", href: "/case-study" },
+    { label: "CONTACT", href: "/contact" },
   ];
 
   const [scrolled, setScrolled] = useState(false);

@@ -3,6 +3,20 @@ import Link from "next/link";
 import ProjectCard from "../components/ProjectCard";
 
 export default function Developments() {
+  const items = [
+    {
+      title: "POPULAR INVESTMENT CLIMATE",
+      text: "Indonesia is the second most popular country to invest in, according to U.S. News.",
+    },
+    {
+      title: "HIGHLY AWARDED",
+      text: "Bali is regularly awarded the best destination in the TripAdvisor Travelers’ Choice Awards, including in 2021.",
+    },
+    {
+      title: "INVESTMENT FRIENDLY",
+      text: "Indonesia welcomes foreign investment, buying property in Bali is safe, legal, and in your name.",
+    },
+  ];
   return (
     <main>
       <section className="relative w-full h-screen">
@@ -82,6 +96,41 @@ export default function Developments() {
         link="/projects/solas-uluwatu"
         imagePosition="left"
       />
+
+      <section className="bg-gray-100 py-16 px-6">
+        <div className="max-w-7xl mx-auto text-center md:text-left">
+          {/* Heading */}
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            <h2 className="text-2xl md:text-4xl font-light leading-snug">
+              WHY BALI IS A{" "}
+              <span className="font-bold block md:inline">
+                GOOD INVESTMENT?
+              </span>
+            </h2>
+            <p className="text-gray-700 text-base md:text-lg max-w-xl">
+              Bali is one of the World’s most popular tourist destinations,
+              attracting visitors from all around the globe
+            </p>
+          </div>
+
+          {/* Cards */}
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {items.map((item, idx) => (
+              <div
+                key={idx}
+                className="bg-black text-white rounded-xl p-12 md:p-14 flex flex-col"
+              >
+                <h3 className="font-bold text-lg md:text-xl mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-gray-300 text-sm md:text-base">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
