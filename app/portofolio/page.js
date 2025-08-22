@@ -8,7 +8,7 @@ export default function Portfolio() {
       <section className="relative w-full h-screen">
         {/* Background Image */}
         <Image
-          src="/images/hero-kawista.webp"
+          src="/images/hero-portfolio.jpg"
           alt="About Hero"
           fill
           className="object-cover"
@@ -42,19 +42,13 @@ export default function Portfolio() {
           {/* Right: Description */}
           <div className="text-gray-700 space-y-4 text-base md:text-lg leading-relaxed">
             <p>
-              Step into the world of extraordinary portfolio of architectural
-              design with Balitecture!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos et laudantium odit quas qui sunt.
             </p>
             <p>
-              Our portfolio features stunning villas that embody elegance,
-              innovation, and functionality. From modern minimalist to
-              contemporary tropical designs, our creations showcase the best in
-              luxury living. Our talented team of architects and designers
-              ensure that every project is a masterpiece.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum expedita fuga incidunt nam quibusdam quos veritatis. Ab amet aperiam, corporis dolorum ducimus facere soluta voluptatibus. Debitis dignissimos ea nisi sunt.
             </p>
             <p>
-              Get ready to be amazed as you explore our portfolio where nothing
-              is too small or too large for us!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem iste nostrum optio velit vero voluptatibus.
             </p>
           </div>
         </div>

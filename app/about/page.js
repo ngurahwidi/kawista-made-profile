@@ -17,7 +17,7 @@ export default function About() {
       <section className="relative w-full h-screen">
         {/* Background Image */}
         <Image
-          src="/images/hero-kawista.webp"
+          src="/images/hero-about.jpg"
           alt="About Hero"
           fill
           className="object-cover"
@@ -58,29 +58,17 @@ export default function About() {
           <div className="">
             <p className="mb-4 font-light">
               <strong>
-                Balitecture is an Australian-owned leading villa developer in
-                Bali.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum debitis doloribus in maxime quos unde?
               </strong>{" "}
-              We are experienced in property design, construction, and property
-              management. We offer end-to-end property development and
-              management services on the island, as well as architectural
-              services internationally. From our popular 1-bedroom ‘hut’ villas
-              to 5-star resorts, no project is too small or too large.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex iste quia similique totam! Amet beatae doloribus ex fugit, hic laborum magni necessitatibus officia omnis pariatur quas quod quos soluta vitae!
             </p>
 
             <p className="mb-4 font-light">
-              With over 1 million followers on Instagram, we have gained
-              significant recognition, showcasing our developments to a global
-              audience. This visibility, along with features in renowned media
-              outlets, has contributed to the swift sales of our properties and
-              brand reliability.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet commodi deleniti dicta dolor eius excepturi expedita explicabo illo illum magnam maxime nihil quaerat quam, quasi ratione totam velit!
             </p>
 
             <p className="mb-6 font-light">
-              Our professional, friendly, and experienced team consists of
-              experts across a wide range of property services. From architects
-              to villa rental specialists, we provide a comprehensive property
-              development and management solution.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloribus fuga illum magnam natus quaerat quas quibusdam quod tempora. Aperiam aut cumque ea eius esse eum ipsum omnis possimus ullam?
             </p>
 
             <Link

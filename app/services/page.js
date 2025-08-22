@@ -41,7 +41,7 @@ export default function Page() {
       <section className="relative w-full h-screen">
         {/* Background Image */}
         <Image
-          src="/images/hero-kawista.webp"
+          src="/images/hero-services.jpg"
           alt="About Hero"
           fill
           className="object-cover"

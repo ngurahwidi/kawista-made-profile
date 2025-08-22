@@ -1,41 +1,27 @@
 "use client";
+
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
-export default function SmoothScrollProvider({ children }) {
+export default function SmoothScrollLayout({ children }) {
   useEffect(() => {
-    // Init Lenis
+    // Inisialisasi Lenis
     const lenis = new Lenis({
-      duration: 1.5,
-      easing: (t) => 1 - Math.pow(1 - t, 4),
+      duration: 1.2, // durasi animasi scroll
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // easing bawaan
       smoothWheel: true,
-      smoothTouch: true,
-      touchMultiplier: 1.5,
+      smoothTouch: false, // kalau di mobile tidak perlu terlalu berat
     });
 
-    // Lenis RAF loop
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
+
     requestAnimationFrame(raf);
 
-    // Sync GSAP ScrollTrigger dengan Lenis
-    lenis.on("scroll", ScrollTrigger.update);
-
-    gsap.ticker.add((time) => {
-      lenis.raf(time * 1000);
-    });
-
-    gsap.ticker.lagSmoothing(0);
-
     return () => {
-      lenis.destroy();
-      gsap.ticker.remove(() => {});
+      lenis.destroy(); // cleanup
     };
   }, []);
 

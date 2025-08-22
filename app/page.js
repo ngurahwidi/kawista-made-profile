@@ -36,7 +36,7 @@ export default function Home() {
           <div className="absolute inset-0 z-0">
             <div className="relative w-full h-full">
               <Image
-                src="/images/hero-kawista.webp"
+                src="/images/hero-home.jpg"
                 alt="Kawista Hero Background"
                 fill
                 className="object-cover"
@@ -60,10 +60,10 @@ export default function Home() {
                     </p>
 
                     <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-tight md:leading-none mb-6 md:mb-8">
-                      <span className="text-white">SUKU</span>
+                      <span className="text-white">KAWISTA</span>
                       <br />
                       <span className="text-gray-300 opacity-60">
-                        RESIDENCES
+                        VILLA
                       </span>
                     </h1>
                   </div>
@@ -94,18 +94,13 @@ export default function Home() {
                 About
               </h2>
               <h1 className="text-3xl sm:text-4xl font-bold mb-6">
-                BALITECTURE
+                KAWISTA MADE
               </h1>
-              <p className="text-gray-700 mb-6">
-                <strong>
-                  Balitecture is an Australian-owned leading villa developer in
-                  Bali.
+              <p className="text-gray-700 mb-6 font-light">
+                <strong className="font-bold">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dignissimos earum eveniet excepturi facilis id nulla quis, rem velit veritatis.
                 </strong>{" "}
-                We are experienced in property design, construction, and
-                property management. We offer end-to-end property development
-                and management services on the island, as well as architectural
-                services internationally. From our popular 1-bedroom ‘hut’
-                villas to 5-star resorts, no project is too small or too large.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corporis dignissimos eaque explicabo, illo in itaque iusto libero minus mollitia, nesciunt odit praesentium quam recusandae reiciendis repellendus sed, sint! Qui!
               </p>
               <button className="bg-black text-white font-light px-6 py-3 border border-transparent hover:bg-transparent hover:text-black hover:border-black transition-colors duration-300">
                 Explore More

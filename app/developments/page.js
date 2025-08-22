@@ -22,7 +22,7 @@ export default function Developments() {
       <section className="relative w-full h-screen">
         {/* Background Image */}
         <Image
-          src="/images/hero-kawista.webp"
+          src="/images/hero-developments.jpg"
           alt="About Hero"
           fill
           className="object-cover"
