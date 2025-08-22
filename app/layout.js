@@ -4,6 +4,7 @@ import SmoothScrollProvider from "./components/SmoothScrollProvider";
 import ConsultationSection from "./components/ConsultationSection";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import PageTransition from "./components/PageTransition";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -29,12 +30,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <SmoothScrollProvider>
-          <Navbar />
-          {children}
-          <ConsultationSection />
-          <Footer />
-        </SmoothScrollProvider>
+        <PageTransition>
+          <SmoothScrollProvider>
+            <Navbar />
+            {children}
+            <ConsultationSection />
+            <Footer />
+          </SmoothScrollProvider>
+        </PageTransition>
       </body>
     </html>
   );
