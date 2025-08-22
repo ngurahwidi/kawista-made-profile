@@ -20,7 +20,7 @@ export default function Contact() {
               {/* Text Content */}
               <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
                   <h2 className="text-white text-2xl font-extralight md:text-4xl tracking-widest mb-2">
-                      LET'S
+                      LET&apos;S
                   </h2>
                   <h1 className="text-white text-4xl md:text-6xl font-bold">
                       GET IN TOUCH
